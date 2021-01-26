@@ -16,7 +16,6 @@ How to install:
 
 Code Sample and How to Use:
 
-<---------------------------------------------->
 function capitalize(str) {
 console.log('---capitalize---');
 return str[0].toUpperCase() + str.slice(1);
