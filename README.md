@@ -14,11 +14,19 @@ How to install:
 2. Navigate to your project directory
 3. Run 'npm i ryan-lee-stringlib' in the command line
 
-Code Sample:
+Code Sample and How to Use:
 
+<---------------------------------------------->
 function capitalize(str) {
 console.log('---capitalize---');
 return str[0].toUpperCase() + str.slice(1);
 }
-console.log(calitalize('hello world'))
+String.prototype.capitalize = function () {
+return capitalize(this);
+};
+
+This function takes the string and capitalizes the first letter
+
+To Use:
+console.log(capitalize('string here'))
 Outputs: 'Hello world'
