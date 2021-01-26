@@ -3,12 +3,18 @@ function capitalize(str) {
   // takes first index of the string, capitalizes, and combines with the rest of the string
   return str[0].toUpperCase() + str.slice(1);
 }
+String.prototype.capitalize = function () {
+  return capitalize(this);
+};
 
 function allCaps(str) {
   console.log('---allCaps---');
   // capitalized every character of the string
   return str.toUpperCase();
 }
+String.prototype.allCaps = function () {
+  return allCaps(this);
+};
 
 function capitalizeWords(str) {
   console.log('---capitalizeWords---');
@@ -22,6 +28,9 @@ function capitalizeWords(str) {
   });
   return result.join(' ');
 }
+String.prototype.capitalizeWords = function () {
+  return capitalizeWords(this);
+};
 
 function removeExtraSpaces(str) {
   console.log('---removeExtraSpaces---');
@@ -33,6 +42,9 @@ function removeExtraSpaces(str) {
   const spaces = chars.filter((c) => c !== '');
   return spaces.join(' ');
 }
+String.prototype.removeExtraSpaces = function () {
+  return removeExtraSpaces(this);
+};
 
 // second parameter for separating the string words
 function kebabCase(str, sep = '-') {
@@ -42,12 +54,18 @@ function kebabCase(str, sep = '-') {
   // joins the string with a '-' in between
   return words.join(sep);
 }
+String.prototype.kebabCase = function () {
+  return kebabCase(this);
+};
 
 function snakeCase(str) {
   console.log('---snakeCase---');
   // calling the kebab case function and replacing the sep parameter with an '_'
   return kebabCase(str, '_');
 }
+String.prototype.snakeCase = function () {
+  return kebabCase(this);
+};
 
 function camelCase(str) {
   console.log('---camelCase---');
@@ -60,6 +78,9 @@ function camelCase(str) {
   const result = space.join('');
   return result;
 }
+String.prototype.camelCase = function () {
+  return camelCase(this);
+};
 
 function shift(str) {
   console.log('---shift---');
@@ -71,6 +92,9 @@ function shift(str) {
   const result = split + first;
   return result;
 }
+String.prototype.shift = function () {
+  return shift(this);
+};
 
 function makeHashTag(str) {
   console.log('---makeHashTag---');
@@ -81,6 +105,9 @@ function makeHashTag(str) {
   // combining a '#' and the string as one
   return '#' + result;
 }
+String.prototype.makeHashTag = function () {
+  return makeHashTag(this);
+};
 
 function isEmpty(str) {
   console.log('---isEmpty---');
@@ -91,3 +118,6 @@ function isEmpty(str) {
     return false;
   }
 }
+String.prototype.isEmpty = function () {
+  return isEmpty(this);
+};
