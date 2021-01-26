@@ -3,14 +3,12 @@ function capitalize(str) {
   // takes first index of the string, capitalizes, and combines with the rest of the string
   return str[0].toUpperCase() + str.slice(1);
 }
-console.log(capitalize('hello world'));
 
 console.log('---allCaps---');
 function allCaps(str) {
   // capitalized every character of the string
   return str.toUpperCase();
 }
-console.log(allCaps('hello world'));
 
 console.log('---capitalizeWords---');
 function capitalizeWords(str) {
@@ -24,7 +22,6 @@ function capitalizeWords(str) {
   });
   return result.join(' ');
 }
-console.log(capitalizeWords('hello world'));
 
 console.log('---removeExtraSpaces---');
 function removeExtraSpaces(str) {
@@ -36,7 +33,6 @@ function removeExtraSpaces(str) {
   const spaces = chars.filter((c) => c !== '');
   return spaces.join(' ');
 }
-console.log(removeExtraSpaces('    hello world   '));
 
 console.log('---kebabCase---');
 // second parameter for separating the string words
@@ -46,14 +42,12 @@ function kebabCase(str, sep = '-') {
   // joins the string with a '-' in between
   return words.join(sep);
 }
-console.log(kebabCase('hello world'));
 
 console.log('---snakeCase---');
 function snakeCase(str) {
   // calling the kebab case function and replacing the sep parameter with an '_'
   return kebabCase(str, '_');
 }
-console.log(snakeCase('hello world'));
 
 console.log('---camelCase---');
 function camelCase(str) {
@@ -66,7 +60,6 @@ function camelCase(str) {
   const result = space.join('');
   return result;
 }
-console.log(camelCase('hello world'));
 
 console.log('---shift---');
 function shift(str) {
@@ -78,7 +71,6 @@ function shift(str) {
   const result = split + first;
   return result;
 }
-console.log(shift('hello world'));
 
 console.log('---makeHashTag---');
 function makeHashTag(str) {
@@ -89,7 +81,6 @@ function makeHashTag(str) {
   // combining a '#' and the string as one
   return '#' + result;
 }
-console.log(makeHashTag('hello world'));
 
 console.log('---isEmpty---');
 function isEmpty(str) {
@@ -100,4 +91,3 @@ function isEmpty(str) {
     return false;
   }
 }
-console.log(isEmpty(''));
