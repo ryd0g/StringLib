@@ -1,17 +1,17 @@
-console.log('---capitalize---');
 function capitalize(str) {
+  console.log('---capitalize---');
   // takes first index of the string, capitalizes, and combines with the rest of the string
   return str[0].toUpperCase() + str.slice(1);
 }
 
-console.log('---allCaps---');
 function allCaps(str) {
+  console.log('---allCaps---');
   // capitalized every character of the string
   return str.toUpperCase();
 }
 
-console.log('---capitalizeWords---');
 function capitalizeWords(str) {
+  console.log('---capitalizeWords---');
   // calling the function to capitalize the first letter
   capitalize(str);
   // splitting the string into an array
@@ -23,8 +23,8 @@ function capitalizeWords(str) {
   return result.join(' ');
 }
 
-console.log('---removeExtraSpaces---');
 function removeExtraSpaces(str) {
+  console.log('---removeExtraSpaces---');
   // trimming the extra spaces off the string
   const trimmed = str.trim();
   // splitting the trimmed string into an array
@@ -34,23 +34,23 @@ function removeExtraSpaces(str) {
   return spaces.join(' ');
 }
 
-console.log('---kebabCase---');
 // second parameter for separating the string words
 function kebabCase(str, sep = '-') {
+  console.log('---kebabCase---');
   // made variable to split the string
   const words = str.split(' ');
   // joins the string with a '-' in between
   return words.join(sep);
 }
 
-console.log('---snakeCase---');
 function snakeCase(str) {
+  console.log('---snakeCase---');
   // calling the kebab case function and replacing the sep parameter with an '_'
   return kebabCase(str, '_');
 }
 
-console.log('---camelCase---');
 function camelCase(str) {
+  console.log('---camelCase---');
   // all words in upper case
   const upper = capitalizeWords(str);
   // array of words split at space
@@ -61,8 +61,8 @@ function camelCase(str) {
   return result;
 }
 
-console.log('---shift---');
 function shift(str) {
+  console.log('---shift---');
   // getting our first character in the string
   const first = str[0];
   // slicing the rest of the string from the first character
@@ -72,8 +72,8 @@ function shift(str) {
   return result;
 }
 
-console.log('---makeHashTag---');
 function makeHashTag(str) {
+  console.log('---makeHashTag---');
   // capitalizing each word of the string and splitting it into an array
   const capital = capitalizeWords(str).split(' ');
   // joining the string with no spaces
@@ -82,8 +82,8 @@ function makeHashTag(str) {
   return '#' + result;
 }
 
-console.log('---isEmpty---');
 function isEmpty(str) {
+  console.log('---isEmpty---');
   const trimmed = str.trim();
   if (trimmed === '') {
     return true;
