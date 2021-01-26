@@ -92,4 +92,12 @@ function makeHashTag(str) {
 console.log(makeHashTag('hello world'));
 
 console.log('---isEmpty---');
-function isEmpty() {}
+function isEmpty(str) {
+  const trimmed = str.trim();
+  if (trimmed === '') {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(isEmpty(''));
