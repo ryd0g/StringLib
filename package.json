@@ -1,7 +1,7 @@
 {
-  "name": "StringLib",
-  "version": "1.0.0",
-  "description": "",
+  "name": "ryan-lee-stringlib",
+  "version": "1.0.1",
+  "description": "string library",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/ryd0g/StringLib.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "ryan lee",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ryd0g/StringLib/issues"
