@@ -1,6 +1,6 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/ryd0g/StringLib)
 ![npm bundle size](https://img.shields.io/bundlephobia/min/ryan-lee-stringlib?color=purple)
-![npm](https://img.shields.io/npm/v/ryan-lee-stringlib?color=green)
+![npm](https://img.shields.io/npm/v/ryan-lee-stringlib?color=dark%20green)
 ![GitHub last commit](https://img.shields.io/github/last-commit/ryd0g/StringLib?color=orange)
 
 String Library
