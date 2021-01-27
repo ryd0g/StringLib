@@ -121,3 +121,16 @@ function isEmpty(str) {
 String.prototype.isEmpty = function () {
   return isEmpty(this);
 };
+
+module.exports = {
+  capitalize,
+  allCaps,
+  capitalizeWords,
+  removeExtraSpaces,
+  kebabCase,
+  snakeCase,
+  camelCase,
+  shift,
+  makeHashTag,
+  isEmpty,
+};
