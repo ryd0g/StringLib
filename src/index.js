@@ -8,7 +8,6 @@ String.prototype.capitalize = function () {
 };
 
 function allCaps(str) {
-  console.log('---allCaps---');
   // capitalized every character of the string
   return str.toUpperCase();
 }
