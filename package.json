@@ -4,6 +4,10 @@
   "description": "string library",
   "main": "src/index.js",
   "types": "esm/index.d.ts",
+  "files": [
+    "esm/*",
+    "umd/*"
+  ],
   "scripts": {
     "test": "jest"
   },
